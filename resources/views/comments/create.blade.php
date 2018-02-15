@@ -3,7 +3,7 @@
 @section('content')
     <section class="content-header">
         <h1>
-            Post
+            Comment
         </h1>
     </section>
     <div class="content">
@@ -12,12 +12,9 @@
 
             <div class="box-body">
                 <div class="row">
-                    {!! Form::open(['route' => 'posts.store']) !!}
+                    {!! Form::open(['route' => 'comments.store']) !!}
 
-                        @include('posts.fields')
-
-
-                        
+                        @include('comments.fields')
 
                     {!! Form::close() !!}
                 </div>

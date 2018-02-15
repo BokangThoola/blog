@@ -43,9 +43,11 @@ Route::get('/posts/{post}/edit', ['as' =>'posts.edit', 'uses' => 'PostController
 Route::patch('/posts/{post}', ['as' =>'posts.update', 'uses' => 'PostController@update']);
 Route::patch('/posts/{post}', ['as' =>'posts.delete', 'uses' => 'PostController@delete']);
 
-
+Route::post('/posts/{post}/comments', ['as' => 'comments.store', 'uses' => 'CommentController@store']);
 
 
 // Route::resource('/','PostController');
 
 Route::resource('posts', 'PostController');
+
+Route::resource('comments', 'CommentController');
