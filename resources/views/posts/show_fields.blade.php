@@ -24,13 +24,3 @@
     {!! Form::label('updated_at', 'Updated At:') !!}
     <p>{!! $post->updated_at !!}</p>
 </div>
-
- {{--  <div class = "card">
-            <div class = "card-block">
-                <Form>
-                    <div class = "form-group">
-                        <textarea name = "body" placeholder = "your comment" class = "form-control"></textarea>
-                    </div>=
-                </Form>
-            </div>
-        </div  --}}

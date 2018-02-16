@@ -3,13 +3,13 @@
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
      <label for="title">Title</label>
-     <input type="textarea" class="form-control" . id="title"  name="title" required>
+     <input type="textarea" class="form-control" . id="title"  name="title"  required>
     
 </div>
 
 <div class="form-group col-sm-12">
     <label for="body">Body</label>
-     <input type="text" class="form-control" . id="body"  name="body" required>
+     <input type="text" class="form-control" . id="body"  name="body"  required>
     
 </div>
 

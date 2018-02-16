@@ -12,6 +12,7 @@ use Prettus\Repository\Criteria\RequestCriteria;
 use Response;
 Use App\Models\Post;
 use App\Models\Comment;
+use App\User;
 
 class CommentController extends AppBaseController
 {
@@ -63,15 +64,8 @@ class CommentController extends AppBaseController
 
         Flash::success('Comment saved successfully.');
 
-        return redirect(route('comments.index'));
-
-       // $input['from_user'] = $request->user()->id;
-        // $input['on_post'] = $request->input('on_post');
-        // $input['body'] = $request->input('body');
-        // $slug = $request->input('slug');
-        // Comment::create($input);
-
-        // return redirect($slug)->with('message', 'Comment published'); 	
+        return redirect(route('posts.index'));
+    	
     }
 
     /**

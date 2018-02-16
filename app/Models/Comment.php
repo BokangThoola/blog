@@ -23,7 +23,9 @@ class Comment extends Model
 
 
     public $fillable = [
-        'body'
+        'body',
+        'post_id',
+        'user_id'
     ];
 
     /**
@@ -48,6 +50,13 @@ class Comment extends Model
     {
         return $this->belongsTo(Post::class);
     }
+
+    public function users()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    
 
     
 }
